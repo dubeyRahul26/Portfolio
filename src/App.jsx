@@ -3,7 +3,7 @@ import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
 import ContactMain from "./components/contactMeSection/ContactMain";
 import FloatingBlobs from "./components/FloatingBlobs";
 import FooterMain from "./components/footer/FooterMain";
-import HeroMain from "./components/heroSection/HeroMain";
+import HeroMain from "./components/heroSection/HeroMain.jsx";
 
 import NavbarMain from "./components/navbar/NavbarMain";
 import ProjectsMain from "./components/projectSection/ProjectsMain";
