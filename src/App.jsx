@@ -4,7 +4,6 @@ import ContactMain from "./components/contactMeSection/ContactMain";
 import FloatingBlobs from "./components/FloatingBlobs";
 import FooterMain from "./components/footer/FooterMain";
 import HeroMain from "./components/heroSection/HeroMain.jsx";
-
 import NavbarMain from "./components/navbar/NavbarMain";
 import ProjectsMain from "./components/projectSection/ProjectsMain";
 import SkillsMain from "./components/skillsSection/SkillsMain";
