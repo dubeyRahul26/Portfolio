@@ -26,6 +26,13 @@ const projects = [
     image: "store.png",
     link: "https://product-store-pwdo.onrender.com",
   },
+  {
+    name: "Taskly",
+    year: "April2025",
+    align: "left",
+    image: "taskly.png",
+    link: "https://taskly-lwbt.onrender.com",
+  }
 ];
 
 const ProjectsMain = () => {
