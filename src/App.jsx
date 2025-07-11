@@ -10,21 +10,32 @@ import SkillsMain from "./components/skillsSection/SkillsMain";
 
 function App() {
   return (
-    <main className="bg-gradient-to-tl from-[#1A1A2E] via-[#16213E] to-[#0F3460] w-screen min-h-screen overflow-x-hidden scroll-smooth">
+    <div className="relative w-screen min-h-screen overflow-x-hidden bg-gradient-to-tl from-[#1A1A2E] via-[#16213E] to-[#0F3460]">
+      
+      {/* Background animated blobs */}
       <FloatingBlobs className="pointer-events-none" />
-      <NavbarMain />
-      <HeroMain />
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mt-36"></div>
-      <AboutMeMain />
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent  mb-5"></div>
-      <SkillsMain/>
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
-      <ProjectsMain/>
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
-      <ContactMain/>
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mb-10"></div>
-      <FooterMain/>
-    </main>
+
+      {/* Scrollable main content */}
+      <main className="relative z-10 overflow-y-auto scroll-smooth">
+        <NavbarMain />
+        <HeroMain />
+
+        <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mt-36"></div>
+        <AboutMeMain />
+
+        <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mb-5"></div>
+        <SkillsMain />
+
+        <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
+        <ProjectsMain />
+
+        <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
+        <ContactMain />
+
+        <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mb-10"></div>
+        <FooterMain />
+      </main>
+    </div>
   );
 }
 

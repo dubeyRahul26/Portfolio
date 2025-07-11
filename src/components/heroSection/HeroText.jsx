@@ -30,12 +30,14 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-gray-200 text-lg "
       >
-        A Passionate Full Stack Developer <br />
-        Focused on building responsive, scalable, <br />
-        and user-friendly web applications
+        A passionate Full Stack Developer dedicated to building responsive,<br/>
+        scalable, and user-focused web applications that deliver exceptional<br/>
+        user experiences across modern platforms.
       </motion.p>
     </div>
   );
 };
 
 export default HeroText;
+
+

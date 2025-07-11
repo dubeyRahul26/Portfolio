@@ -9,28 +9,33 @@ const Links = [
 
 const FooterMain = () => {
   return (
-    <div className="px-8">
-      <div className="md:flex hidden justify-between mt-4 max-w-[1200px] mx-auto">
-        <p className="text-3xl text-gray-400 hidden md:block">Rahul Dubey</p>
-        <ul className="flex gap-4 text-gray-400 text-xl">
-          {Links.map((item, index) => {
-            return (
-              <li key={index}>
-                <a
-                  href={`#${item.section}`}
-                  className="hover:text-white transition-all duration-500 cursor-pointer"
-                >
-                  {item.link}
-                </a>
-              </li>
-            );
-          })}
+    <footer className="bg-gray-900 text-gray-400 px-6 md:px-12 py-10">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Left: Name */}
+        <p className="text-2xl font-semibold tracking-wide text-white">
+          Rahul Dubey
+        </p>
+
+        {/* Center: Navigation */}
+        <ul className="flex flex-wrap gap-6 text-sm md:text-base">
+          {Links.map((item, index) => (
+            <li key={index}>
+              <a
+                href={`#${item.section}`}
+                className="hover:text-white transition duration-300"
+              >
+                {item.link}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
-      <p className="text-center md:text-right text-gray-400 text-sm mt-2 mb-2">
+
+      {/* Bottom: Copyright */}
+      <div className="mt-6 text-center md:text-right text-xs text-gray-500">
         © {new Date().getFullYear()} Rahul Dubey. All Rights Reserved.
-      </p>
-    </div>
+      </div>
+    </footer>
   );
 };
 
