@@ -6,40 +6,34 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
+    name: "Campus Connect",
+    year: "JAN2026",
+    align: "right",
+    image: "campus_connect.png",
+    link: "https://campus-connect-dn07.onrender.com",
+  },
+  {
     name: "PrepWise",
     year: "July2025",
-    align: "right",
+    align: "left",
     image: "prepwise.png",
     link: "https://prep-wise-n0gs.onrender.com",
   },
   {
     name: "FlexCart",
     year: "Jan2025",
-    align: "left",
+    align: "right",
     image: "flexcart.png",
     link: "https://flex-cart.onrender.com",
   },
   {
     name: "ChatApp",
     year: "Nov2024",
-    align: "right",
+    align: "left",
     image: "chatapp.png",
     link: "https://chat-app-tu33.onrender.com",
   },
-  {
-    name: "Product Store",
-    year: "Sept2024",
-    align: "left",
-    image: "store.png",
-    link: "https://product-store-pwdo.onrender.com",
-  },
-  {
-    name: "Taskly",
-    year: "April2024",
-    align: "right",
-    image: "taskly.png",
-    link: "https://taskly-lwbt.onrender.com",
-  }
+  
 ];
 
 const ProjectsMain = () => {
